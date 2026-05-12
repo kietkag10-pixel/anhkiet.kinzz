@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lê Phùng Anh Kiệt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Lê Phùng Anh Kiệt</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn" aria-label="Toggle theme">
+                    <span class="icon">🌙</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Lê Phùng Anh Kiệt</h1>
+                <p class="hero-subtitle">Graphic Designer</p>
+                <p class="hero-description">
+                    Tạo ra những thiết kế sáng tạo, tối giản và có tác động mạnh mẽ. Chuyên về UI/UX, branding và visual storytelling.
+                </p>
+                <a href="#projects" class="cta-button">View Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Tôi là Lê Phùng Anh Kiệt, một Graphic Designer đam mê với việc kết hợp nghệ thuật và công nghệ để tạo ra những trải nghiệm thị giác ấn tượng. 
+                Với phong cách thiết kế hiện đại, tối giản và cao cấp, tôi tập trung vào việc giải quyết vấn đề thông qua thiết kế sáng tạo, 
+                đảm bảo mỗi dự án đều mang lại giá trị và sự khác biệt.
+            </p>
+            <p>
+                Kỹ năng của tôi bao gồm UI/UX Design, Branding, Illustration và Digital Art. Tôi luôn tìm kiếm cơ hội để học hỏi và áp dụng 
+                những xu hướng mới nhất trong ngành thiết kế.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background-color: #00d4ff;"></div>
+                    <div class="project-info">
+                        <h3>Neon Brand Identity</h3>
+                        <p>Thiết kế nhận diện thương hiệu với phong cách neon hiện đại cho một startup công nghệ. Bao gồm logo, màu sắc và typography.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-color: #ff6b6b;"></div>
+                    <div class="project-info">
+                        <h3>Minimalist UI Kit</h3>
+                        <p>Bộ UI kit tối giản cho ứng dụng di động, tập trung vào trải nghiệm người dùng mượt mà và thiết kế sạch sẽ.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image" style="background-color: #4ecdc4;"></div>
+                    <div class="project-info">
+                        <h3>Creative Poster Series</h3>
+                        <p>Series poster sáng tạo cho chiến dịch marketing, kết hợp illustration và typography để kể chuyện một cách hấp dẫn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> anhkiet.lephung@example.com</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Behance</a>
+                    <a href="#" class="social-link">Dribbble</a>
+                    <a href="#" class="social-link">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Lê Phùng Anh Kiệt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle functionality
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+        const body = document.body;
+        const icon = themeToggleBtn.querySelector('.icon');
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('light-mode');
+            if (body.classList.contains('light-mode')) {
+                icon.textContent = '☀️';
+            } else {
+                icon.textContent = '🌙';
+            }
+        });
+    </script>
+</body>
+</html>
