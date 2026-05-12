@@ -2,235 +2,157 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio Scorpio | Lê Phùng Anh Kiệt</title>
+  <title>Portfolio Galaxy | Lê Phùng Anh Kiệt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- THEME TOGGLE -->
-<input type="checkbox" id="theme-toggle">
-<label for="theme-toggle" class="toggle-btn"></label>
-
 <!-- HEADER -->
 <header>
-  <h1 class="logo">Scorpio</h1>
+  <h1 class="logo">AKIET.</h1>
   <nav>
     <a href="#home">Trang chủ</a>
-    <a href="#about">Về tôi</a>
-    <a href="#experience">Kinh nghiệm</a>
+    <a href="#about">Giới thiệu</a>
     <a href="#projects">Dự án</a>
     <a href="#contact">Liên hệ</a>
   </nav>
 </header>
 
 <!-- HERO -->
-<section id="home" class="hero cinematic">
+<section id="home" class="hero">
 
+  <!-- LEFT -->
   <div class="hero-left">
-    <h2 class="fade-in">Nhân diện Kỹ thuật số</h2>
 
-    <h1 class="big scorpio-title">
-      Lê Phùng Anh Kiệt
+    <p class="fade-in">Xin chào, tôi là</p>
+
+    <h1 class="big">
+      LÊ PHÙNG <br> ANH KIỆT
     </h1>
 
-    <p class="fade-in delay">
-      Graphic Designer — Tạo ra những trải nghiệm hình ảnh tương lai
+    <h3 class="role">NHÀ THIẾT KẾ ĐỒ HỌA</h3>
+
+    <p class="desc">
+      Tôi tạo ra các dự án thiết kế với đam mê và mục tiêu rõ ràng, biến ý tưởng thành câu chuyện hình ảnh
+      ấn tượng và mang đậm phong cách cá nhân.
     </p>
 
+    <!-- BUTTONS -->
     <div class="hero-buttons">
-      <a href="#projects" class="btn">Xem Dự án</a>
-      <a href="#contact" class="btn outline">Liên hệ tôi</a>
+      <a href="#projects" class="btn">Xem dự án</a>
+      <a href="#contact" class="btn outline">Tải CV</a>
     </div>
+
+    <!-- SOCIAL -->
+    <div class="socials">
+      <a href="https://www.facebook.com/kietne.kinz2909?locale=vi_VN" target="_blank" rel="noreferrer">Facebook</a>
+      <a href="https://www.instagram.com/anh.kiet_kinz/" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="https://zalo.me/84123456789" target="_blank" rel="noreferrer">Zalo</a>
+    </div>
+
   </div>
 
-  <!-- VISUAL WITH AVATAR -->
+  <!-- RIGHT (PLANET + AVATAR) -->
   <div class="hero-right">
+
+    <div class="planet"></div>
 
     <div class="avatar-container">
       <img src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/605630868_1374713017477417_5462270144693449261_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEM_PLkpnb56bt8QkKU3e562Z8nIGQjACHZnycgZCMAIc4YkzYUoUPRrtbRkIqOKmtWe_OXse-Gqe-_0uOcvQHy&_nc_ohc=nKtbWfyqxAMQ7kNvwH-KYso&_nc_oc=AdqBVSgi4zOsP8d_rZ2C4MYA3xqV1kiS87QFWpDtmLqTPaCN0SE_Gf-8NbmtaZAd1WQ&_nc_zt=23&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=rfmYPF0sJTLS4TuuTCbYRA&_nc_ss=7b2a8&oh=00_Af7PJRrm81XMWuPxw_07OjRqwRK-1azIg5Q19gBkor9v8A&oe=6A08954D" alt="Avatar" class="avatar">
     </div>
 
-    <div class="energy-core"></div>
+    <div class="orbit orbit1"></div>
+    <div class="orbit orbit2"></div>
 
-    <div class="ring ring1"></div>
-    <div class="ring ring2"></div>
-    <div class="ring ring3"></div>
+  </div>
 
-    <!-- subtle text instead of icon -->
-    <div class="scorpio-symbol-text">
-      SCORPIO
-    </div>
+</section>
 
+<!-- STATS -->
+<section class="stats">
+
+  <div class="stat">
+    <h2>3+</h2>
+    <p>Năm kinh nghiệm</p>
+  </div>
+
+  <div class="stat">
+    <h2>50+</h2>
+    <p>Dự án hoàn thành</p>
+  </div>
+
+  <div class="stat">
+    <h2>20+</h2>
+    <p>Khách hàng hài lòng</p>
   </div>
 
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="section about-with-image">
-
-  <h2 class="section-title">Về Tôi</h2>
-
-  <div class="about-wrapper">
+<section id="about" class="about section">
+  <h2 class="section-title">Giới thiệu</h2>
+  <div class="about-grid">
     <div class="about-image">
       <img src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/583482867_1348521423429910_7073331310559896751_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeGnMRDGC2uWozPLwZoPfpOloZoJrGYcnm6hmgmsZhyeblIvgvqrsaotC7oBTO9QryoQGjC2r_zsS82Mzw6ioGuP&_nc_ohc=Yg0qDwrm36UQ7kNvwGLl9Q4&_nc_oc=AdqkraK4u_jTKW8Ij8-lerRDMjypJdsJ0bz_8t9AbWiPUlmDUgUwDa4csYLN5o7VTXk&_nc_zt=23&_nc_ht=scontent.fsgn2-5.fna&_nc_gid=ZU7uo-4mdOdbxfJ71utm5A&_nc_ss=7b2a8&oh=00_Af5PJN8VqR7zgeXsPX_1YgR8Nfb8mbtZZV-HR_Ce0KAoqg&oe=6A087CC9" alt="Lê Phùng Anh Kiệt">
     </div>
-
-    <div class="about-intro">
-      <p>
-        Xin chào! Tôi là <strong>Lê Phùng Anh Kiệt</strong>, một Graphic Designer có đam mê thiết kế với sự kết hợp giữa 
-        nghệ thuật và công nghệ. Tôi chuyên tạo ra những trải nghiệm thị giác độc đáo và ấn tượng, 
-        với phong cách thiết kế hiện đại, tối giản nhưng có chiều sâu.
-      </p>
-      <p>
-        Với quá trình học tập và thực hành trong lĩnh vực thiết kế, tôi đã phát triển năng lực 
-        trong UI/UX Design, Branding, Illustration và Digital Art. Mỗi dự án của tôi đều được 
-        thực hiện với sự tập trung vào chi tiết, sáng tạo và giải quyết vấn đề của khách hàng.
-      </p>
+    <div class="about-content">
+      <p>Xin chào! Tôi là <strong>Lê Phùng Anh Kiệt</strong>, nhà thiết kế đồ họa với năng lượng sáng tạo cho mỗi câu chuyện hình ảnh. Tôi kết hợp branding, UI và digital art để tạo nên những trải nghiệm mạnh mẽ và dễ nhớ.</p>
+      <p>Công việc của tôi tập trung vào nhận diện thương hiệu hiện đại, thiết kế giao diện và kể chuyện đồ họa với phong cách tương lai và thông điệp rõ ràng.</p>
+      <div class="skills-list">
+        <span class="skill-tag">Thương hiệu</span>
+        <span class="skill-tag">UI/UX</span>
+        <span class="skill-tag">Minh họa</span>
+        <span class="skill-tag">Motion</span>
+      </div>
     </div>
   </div>
-
 </section>
 
-<!-- DESIGN PHILOSOPHY -->
-<section id="philosophy" class="section split">
-
-  <div class="about-left">
-    <h2 class="section-title">Triết lý Thiết kế</h2>
-    <p>
-      Công việc của tôi khám phá sự cân bằng giữa cấu trúc và cảm xúc,
-      sử dụng tương phản, độ sâu và chuyển động để tạo ra những trải nghiệm kỹ thuật số sâu sắc.
-    </p>
-  </div>
-
-  <div class="about-right">
-
-    <div class="trait-card">
-      <h3>Cường độ</h3>
-      <p>Hướng dẫn thị giác mạnh mẽ với thực thi táo bạo.</p>
+<!-- SERVICES -->
+<section id="services" class="services section">
+  <h2 class="section-title">Dịch vụ của tôi</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Thiết kế nhận diện</h3>
+      <p>Xây dựng thương hiệu cá nhân và doanh nghiệp với phong cách chuyên nghiệp.</p>
     </div>
-
-    <div class="trait-card">
-      <h3>Độ chính xác</h3>
-      <p>Bố cục sạch sẽ và chi tiết tinh tế.</p>
+    <div class="service-card">
+      <h3>Thiết kế UI/UX</h3>
+      <p>Tạo ra giao diện web/app dễ dùng, tối ưu trải nghiệm người dùng.</p>
     </div>
-
-    <div class="trait-card">
-      <h3>Bầu không khí</h3>
-      <p>Thẩm mỹ tối với sâu sắc điện ảnh.</p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-
-  <h2 class="section-title">Kinh Nghiệm</h2>
-
-  <div class="experience-grid">
-
-    <div class="experience-card">
-      <div class="exp-header">
-        <h3>Graphic Designer</h3>
-        <span class="exp-date">2022 - Hiện tại</span>
-      </div>
-      <p class="exp-company">Công ty Thiết kế Creative Hub</p>
-      <ul class="exp-list">
-        <li>Thiết kế nhận diện thương hiệu và hệ thống branding</li>
-        <li>Tạo giao diện UI/UX cho ứng dụng mobile và web</li>
-        <li>Quản lý dự án thiết kế và phối hợp với nhóm phát triển</li>
-      </ul>
-    </div>
-
-    <div class="experience-card">
-      <div class="exp-header">
-        <h3>UI/UX Designer</h3>
-        <span class="exp-date">2020 - 2022</span>
-      </div>
-      <p class="exp-company">Digital Agency Nexus</p>
-      <ul class="exp-list">
-        <li>Thiết kế giao diện người dùng cho 15+ dự án khách hàng</li>
-        <li>Thực hiện research người dùng và wireframing</li>
-        <li>Tối ưu UX dựa trên feedback và analytics</li>
-      </ul>
-    </div>
-
-    <div class="experience-card">
-      <div class="exp-header">
-        <h3>Junior Designer</h3>
-        <span class="exp-date">2019 - 2020</span>
-      </div>
-      <p class="exp-company">Design Studio Pulse</p>
-      <ul class="exp-list">
-        <li>Hỗ trợ thiết kế poster, banner và tài liệu marketing</li>
-        <li>Học hỏi các kỹ thuật thiết kế từ senior designers</li>
-        <li>Xây dựng danh mục tác phẩm ban đầu</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="skills-section">
-    <h3 class="skills-title">Kỹ năng & Công nghệ</h3>
-    <div class="skills-grid">
-      <div class="skill-item">Adobe Creative Suite (Ps, Ai, Xd)</div>
-      <div class="skill-item">Figma & Prototyping</div>
-      <div class="skill-item">UI/UX Design</div>
-      <div class="skill-item">Branding & Identity</div>
-      <div class="skill-item">Web Design</div>
-      <div class="skill-item">Motion Design</div>
-      <div class="skill-item">Typography</div>
-      <div class="skill-item">Color Theory</div>
+    <div class="service-card">
+      <h3>Illustration & Art</h3>
+      <p>Minh họa sáng tạo, phong cách đậm chất digital art và concept hiện đại.</p>
     </div>
   </div>
-
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section">
+<section id="projects" class="projects">
 
-  <h2 class="section-title">Dự án Nổi bật</h2>
+  <h2 class="section-title">Dự án nổi bật</h2>
 
-  <div class="project">
+  <div class="project-grid">
 
-    <div class="project-img">
+    <div class="project-card" data-title="Thiết kế nhân vật" data-desc="Dự án nhân vật sáng tạo với phong cách điện ảnh." data-img="https://media.discordapp.net/attachments/1288526030054752314/1502708371265163394/Screenshot_2026-04-14_120438.png?ex=6a03fd7a&is=6a02abfa&hm=bc218e092f291539a65aa7170db934d551dc30ff28053109af5087c9ad19aa5c&=&format=webp&quality=lossless&width=1385&height=778">
       <img src="https://media.discordapp.net/attachments/1288526030054752314/1502708371265163394/Screenshot_2026-04-14_120438.png?ex=6a03fd7a&is=6a02abfa&hm=bc218e092f291539a65aa7170db934d551dc30ff28053109af5087c9ad19aa5c&=&format=webp&quality=lossless&width=1385&height=778">
+      <div class="overlay">Thiết kế nhân vật</div>
     </div>
 
-    <div class="project-info">
-      <h3>Thiết kế Nhân vật</h3>
-      <p>Thiết kế và phát triển nhân vật độc đáo với phong cách hiện đại và sáng tạo.</p>
-    </div>
-
-  </div>
-
-  <div class="project reverse">
-
-    <div class="project-img">
+    <div class="project-card" data-title="Thiết kế photobook" data-desc="Thiết kế photobook chuyên nghiệp, bố cục tinh tế và câu chuyện thị giác hấp dẫn." data-img="https://media.discordapp.net/attachments/1288526030054752314/1502708248929636412/Screenshot_2026-03-25_194302.png?ex=6a03fd5d&is=6a02abdd&hm=b0fd313b00c838f765bdcde7ea62f4b54ad645fa2dd761736c0417c79346447c&=&format=webp&quality=lossless&width=996&height=748">
       <img src="https://media.discordapp.net/attachments/1288526030054752314/1502708248929636412/Screenshot_2026-03-25_194302.png?ex=6a03fd5d&is=6a02abdd&hm=b0fd313b00c838f765bdcde7ea62f4b54ad645fa2dd761736c0417c79346447c&=&format=webp&quality=lossless&width=996&height=748">
+      <div class="overlay">Thiết kế photobook</div>
     </div>
 
-    <div class="project-info">
-      <h3>Thiết kế Photobook</h3>
-      <p>Thiết kế sách ảnh chuyên nghiệp với bố cục tối ưu và truyện thị giác hấp dẫn.</p>
-    </div>
-
-  </div>
-
-  <div class="project">
-
-    <div class="project-img">
+    <div class="project-card" data-title="Ứng dụng Night Vision" data-desc="Giao diện ứng dụng tối ưu cho trải nghiệm đêm và phong cách hiện đại." data-img="https://picsum.photos/1200/800?dark3">
       <img src="https://picsum.photos/800/500?dark3">
-    </div>
-
-    <div class="project-info">
-      <h3>Ứng dụng Night Vision</h3>
-      <p>Hệ thống UX di động ở chế độ tối sâu sắc.</p>
+      <div class="overlay">Ứng dụng Night Vision</div>
     </div>
 
   </div>
@@ -238,27 +160,79 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section contact-center">
-
+<section id="contact" class="contact section">
   <h2 class="section-title">Liên hệ</h2>
-
-  <div class="contact-info">
-    <p><strong>Email:</strong> <a href="mailto:anhkiet.design@gmail.com">anhkiet.design@gmail.com</a></p>
-    <p><strong>Số điện thoại:</strong> <a href="tel:+84912345678">+84 (912) 345-678</a></p>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <h3>Email</h3>
+      <p>anhkiet@example.com</p>
+    </div>
+    <div class="contact-card">
+      <h3>Điện thoại</h3>
+      <p>+84 123 456 789</p>
+    </div>
+    <div class="contact-card">
+      <h3>Mạng xã hội</h3>
+      <p>Facebook / Instagram / Zalo</p>
+      <div class="contact-links">
+        <a href="https://www.facebook.com/kietne.kinz2909?locale=vi_VN" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/anh.kiet_kinz/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://zalo.me/84123456789" target="_blank" rel="noreferrer">Zalo</a>
+      </div>
+    </div>
   </div>
-
-  <div class="socials">
-    <span>Behance</span>
-    <span>Dribbble</span>
-    <span>Instagram</span>
-  </div>
-
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Lê Phùng Anh Kiệt — Scorpio Vision</p>
+  <p>© 2026 Lê Phùng Anh Kiệt</p>
 </footer>
+
+<div class="project-modal" id="projectModal" aria-hidden="true">
+  <div class="modal-panel">
+    <button class="modal-close" aria-label="Đóng">×</button>
+    <img class="modal-img" src="" alt="Dự án">
+    <div class="modal-info">
+      <h3 class="modal-title"></h3>
+      <p class="modal-desc"></p>
+    </div>
+  </div>
+</div>
+
+<script>
+  const projectCards = document.querySelectorAll('.project-card');
+  const modal = document.getElementById('projectModal');
+  const modalImg = modal.querySelector('.modal-img');
+  const modalTitle = modal.querySelector('.modal-title');
+  const modalDesc = modal.querySelector('.modal-desc');
+  const modalClose = modal.querySelector('.modal-close');
+
+  projectCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const title = card.dataset.title;
+      const desc = card.dataset.desc;
+      const img = card.dataset.img;
+      modalImg.src = img;
+      modalImg.alt = title;
+      modalTitle.textContent = title;
+      modalDesc.textContent = desc;
+      modal.classList.add('active');
+      modal.setAttribute('aria-hidden', 'false');
+    });
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+  });
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      modal.classList.remove('active');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+  });
+</script>
 
 </body>
 </html>
