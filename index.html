@@ -13,6 +13,15 @@
 
 <body>
 
+<!-- PARALLAX LAYERS -->
+<div class="parallax">
+  <div class="layer layer-stars"></div>
+  <div class="layer layer-nebula"></div>
+  <div class="layer layer-far"></div>
+  <div class="layer layer-mid"></div>
+  <div class="layer layer-near"></div>
+</div>
+
 <!-- HEADER -->
 <header>
   <h1 class="logo">AKIET.</h1>
@@ -103,6 +112,7 @@
     </div>
     <div class="about-content">
       <p>Xin chào! Tôi là <strong>Lê Phùng Anh Kiệt</strong>, nhà thiết kế đồ họa với năng lượng sáng tạo cho mỗi câu chuyện hình ảnh. Tôi kết hợp branding, UI và digital art để tạo nên những trải nghiệm mạnh mẽ và dễ nhớ.</p>
+      <p>Tôi đam mê lĩnh vực thiết kế vì nó cho phép tôi biến ý tưởng thành hình ảnh sống động, truyền tải cảm xúc và thông điệp một cách trực quan. Khi nhìn thấy thương hiệu hoặc sản phẩm của khách hàng được sống lại qua thiết kế, tôi cảm thấy công việc trở nên đầy ý nghĩa.</p>
       <p>Công việc của tôi tập trung vào nhận diện thương hiệu hiện đại, thiết kế giao diện và kể chuyện đồ họa với phong cách tương lai và thông điệp rõ ràng.</p>
       <div class="skills-list">
         <span class="skill-tag">Thương hiệu</span>
@@ -188,6 +198,8 @@
   <p>© 2026 Lê Phùng Anh Kiệt</p>
 </footer>
 
+<button class="back-to-top" id="backToTop" aria-label="Về đầu trang">↑</button>
+
 <div class="project-modal" id="projectModal" aria-hidden="true">
   <div class="modal-panel">
     <button class="modal-close" aria-label="Đóng">×</button>
@@ -231,6 +243,19 @@
       modal.classList.remove('active');
       modal.setAttribute('aria-hidden', 'true');
     }
+  });
+
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 350) {
+      backToTop.classList.add('active');
+    } else {
+      backToTop.classList.remove('active');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 </script>
 
