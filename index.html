@@ -1,131 +1,264 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Lê Phùng Anh Kiệt</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Portfolio Scorpio | Lê Phùng Anh Kiệt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <h1>Lê Phùng Anh Kiệt</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="theme-toggle">
-                <button id="theme-toggle-btn" aria-label="Toggle theme">
-                    <span class="icon">🌙</span>
-                </button>
-            </div>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Lê Phùng Anh Kiệt</h1>
-                <p class="hero-subtitle">Graphic Designer</p>
-                <p class="hero-description">
-                    Tạo ra những thiết kế sáng tạo, tối giản và có tác động mạnh mẽ. Chuyên về UI/UX, branding và visual storytelling.
-                </p>
-                <a href="#projects" class="cta-button">View Projects</a>
-            </div>
-        </div>
-    </section>
+<!-- THEME TOGGLE -->
+<input type="checkbox" id="theme-toggle">
+<label for="theme-toggle" class="toggle-btn"></label>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Tôi là Lê Phùng Anh Kiệt, một Graphic Designer đam mê với việc kết hợp nghệ thuật và công nghệ để tạo ra những trải nghiệm thị giác ấn tượng. 
-                Với phong cách thiết kế hiện đại, tối giản và cao cấp, tôi tập trung vào việc giải quyết vấn đề thông qua thiết kế sáng tạo, 
-                đảm bảo mỗi dự án đều mang lại giá trị và sự khác biệt.
-            </p>
-            <p>
-                Kỹ năng của tôi bao gồm UI/UX Design, Branding, Illustration và Digital Art. Tôi luôn tìm kiếm cơ hội để học hỏi và áp dụng 
-                những xu hướng mới nhất trong ngành thiết kế.
-            </p>
-        </div>
-    </section>
+<!-- HEADER -->
+<header>
+  <h1 class="logo">Scorpio</h1>
+  <nav>
+    <a href="#home">Trang chủ</a>
+    <a href="#about">Về tôi</a>
+    <a href="#experience">Kinh nghiệm</a>
+    <a href="#projects">Dự án</a>
+    <a href="#contact">Liên hệ</a>
+  </nav>
+</header>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #00d4ff;"></div>
-                    <div class="project-info">
-                        <h3>Neon Brand Identity</h3>
-                        <p>Thiết kế nhận diện thương hiệu với phong cách neon hiện đại cho một startup công nghệ. Bao gồm logo, màu sắc và typography.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #ff6b6b;"></div>
-                    <div class="project-info">
-                        <h3>Minimalist UI Kit</h3>
-                        <p>Bộ UI kit tối giản cho ứng dụng di động, tập trung vào trải nghiệm người dùng mượt mà và thiết kế sạch sẽ.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image" style="background-color: #4ecdc4;"></div>
-                    <div class="project-info">
-                        <h3>Creative Poster Series</h3>
-                        <p>Series poster sáng tạo cho chiến dịch marketing, kết hợp illustration và typography để kể chuyện một cách hấp dẫn.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- HERO -->
+<section id="home" class="hero cinematic">
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div class="contact-info">
-                <p><strong>Email:</strong> anhkiet.lephung@example.com</p>
-                <div class="social-links">
-                    <a href="#" class="social-link">LinkedIn</a>
-                    <a href="#" class="social-link">Behance</a>
-                    <a href="#" class="social-link">Dribbble</a>
-                    <a href="#" class="social-link">Instagram</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="hero-left">
+    <h2 class="fade-in">Nhân diện Kỹ thuật số</h2>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Lê Phùng Anh Kiệt. All rights reserved.</p>
-        </div>
-    </footer>
+    <h1 class="big scorpio-title">
+      Lê Phùng Anh Kiệt
+    </h1>
 
-    <script>
-        // Theme toggle functionality
-        const themeToggleBtn = document.getElementById('theme-toggle-btn');
-        const body = document.body;
-        const icon = themeToggleBtn.querySelector('.icon');
+    <p class="fade-in delay">
+      Graphic Designer — Tạo ra những trải nghiệm hình ảnh tương lai
+    </p>
 
-        themeToggleBtn.addEventListener('click', () => {
-            body.classList.toggle('light-mode');
-            if (body.classList.contains('light-mode')) {
-                icon.textContent = '☀️';
-            } else {
-                icon.textContent = '🌙';
-            }
-        });
-    </script>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">Xem Dự án</a>
+      <a href="#contact" class="btn outline">Liên hệ tôi</a>
+    </div>
+  </div>
+
+  <!-- VISUAL WITH AVATAR -->
+  <div class="hero-right">
+
+    <div class="avatar-container">
+      <img src="https://scontent.fsgn2-7.fna.fbcdn.net/v/t39.30808-6/605630868_1374713017477417_5462270144693449261_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEM_PLkpnb56bt8QkKU3e562Z8nIGQjACHZnycgZCMAIc4YkzYUoUPRrtbRkIqOKmtWe_OXse-Gqe-_0uOcvQHy&_nc_ohc=nKtbWfyqxAMQ7kNvwH-KYso&_nc_oc=AdqBVSgi4zOsP8d_rZ2C4MYA3xqV1kiS87QFWpDtmLqTPaCN0SE_Gf-8NbmtaZAd1WQ&_nc_zt=23&_nc_ht=scontent.fsgn2-7.fna&_nc_gid=rfmYPF0sJTLS4TuuTCbYRA&_nc_ss=7b2a8&oh=00_Af7PJRrm81XMWuPxw_07OjRqwRK-1azIg5Q19gBkor9v8A&oe=6A08954D" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="energy-core"></div>
+
+    <div class="ring ring1"></div>
+    <div class="ring ring2"></div>
+    <div class="ring ring3"></div>
+
+    <!-- subtle text instead of icon -->
+    <div class="scorpio-symbol-text">
+      SCORPIO
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about-with-image">
+
+  <h2 class="section-title">Về Tôi</h2>
+
+  <div class="about-wrapper">
+    <div class="about-image">
+      <img src="https://scontent.fsgn2-5.fna.fbcdn.net/v/t39.30808-6/583482867_1348521423429910_7073331310559896751_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=53a332&_nc_eui2=AeGnMRDGC2uWozPLwZoPfpOloZoJrGYcnm6hmgmsZhyeblIvgvqrsaotC7oBTO9QryoQGjC2r_zsS82Mzw6ioGuP&_nc_ohc=Yg0qDwrm36UQ7kNvwGLl9Q4&_nc_oc=AdqkraK4u_jTKW8Ij8-lerRDMjypJdsJ0bz_8t9AbWiPUlmDUgUwDa4csYLN5o7VTXk&_nc_zt=23&_nc_ht=scontent.fsgn2-5.fna&_nc_gid=ZU7uo-4mdOdbxfJ71utm5A&_nc_ss=7b2a8&oh=00_Af5PJN8VqR7zgeXsPX_1YgR8Nfb8mbtZZV-HR_Ce0KAoqg&oe=6A087CC9" alt="Lê Phùng Anh Kiệt">
+    </div>
+
+    <div class="about-intro">
+      <p>
+        Xin chào! Tôi là <strong>Lê Phùng Anh Kiệt</strong>, một Graphic Designer có đam mê thiết kế với sự kết hợp giữa 
+        nghệ thuật và công nghệ. Tôi chuyên tạo ra những trải nghiệm thị giác độc đáo và ấn tượng, 
+        với phong cách thiết kế hiện đại, tối giản nhưng có chiều sâu.
+      </p>
+      <p>
+        Với quá trình học tập và thực hành trong lĩnh vực thiết kế, tôi đã phát triển năng lực 
+        trong UI/UX Design, Branding, Illustration và Digital Art. Mỗi dự án của tôi đều được 
+        thực hiện với sự tập trung vào chi tiết, sáng tạo và giải quyết vấn đề của khách hàng.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<!-- DESIGN PHILOSOPHY -->
+<section id="philosophy" class="section split">
+
+  <div class="about-left">
+    <h2 class="section-title">Triết lý Thiết kế</h2>
+    <p>
+      Công việc của tôi khám phá sự cân bằng giữa cấu trúc và cảm xúc,
+      sử dụng tương phản, độ sâu và chuyển động để tạo ra những trải nghiệm kỹ thuật số sâu sắc.
+    </p>
+  </div>
+
+  <div class="about-right">
+
+    <div class="trait-card">
+      <h3>Cường độ</h3>
+      <p>Hướng dẫn thị giác mạnh mẽ với thực thi táo bạo.</p>
+    </div>
+
+    <div class="trait-card">
+      <h3>Độ chính xác</h3>
+      <p>Bố cục sạch sẽ và chi tiết tinh tế.</p>
+    </div>
+
+    <div class="trait-card">
+      <h3>Bầu không khí</h3>
+      <p>Thẩm mỹ tối với sâu sắc điện ảnh.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+
+  <h2 class="section-title">Kinh Nghiệm</h2>
+
+  <div class="experience-grid">
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <h3>Graphic Designer</h3>
+        <span class="exp-date">2022 - Hiện tại</span>
+      </div>
+      <p class="exp-company">Công ty Thiết kế Creative Hub</p>
+      <ul class="exp-list">
+        <li>Thiết kế nhận diện thương hiệu và hệ thống branding</li>
+        <li>Tạo giao diện UI/UX cho ứng dụng mobile và web</li>
+        <li>Quản lý dự án thiết kế và phối hợp với nhóm phát triển</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <h3>UI/UX Designer</h3>
+        <span class="exp-date">2020 - 2022</span>
+      </div>
+      <p class="exp-company">Digital Agency Nexus</p>
+      <ul class="exp-list">
+        <li>Thiết kế giao diện người dùng cho 15+ dự án khách hàng</li>
+        <li>Thực hiện research người dùng và wireframing</li>
+        <li>Tối ưu UX dựa trên feedback và analytics</li>
+      </ul>
+    </div>
+
+    <div class="experience-card">
+      <div class="exp-header">
+        <h3>Junior Designer</h3>
+        <span class="exp-date">2019 - 2020</span>
+      </div>
+      <p class="exp-company">Design Studio Pulse</p>
+      <ul class="exp-list">
+        <li>Hỗ trợ thiết kế poster, banner và tài liệu marketing</li>
+        <li>Học hỏi các kỹ thuật thiết kế từ senior designers</li>
+        <li>Xây dựng danh mục tác phẩm ban đầu</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="skills-section">
+    <h3 class="skills-title">Kỹ năng & Công nghệ</h3>
+    <div class="skills-grid">
+      <div class="skill-item">Adobe Creative Suite (Ps, Ai, Xd)</div>
+      <div class="skill-item">Figma & Prototyping</div>
+      <div class="skill-item">UI/UX Design</div>
+      <div class="skill-item">Branding & Identity</div>
+      <div class="skill-item">Web Design</div>
+      <div class="skill-item">Motion Design</div>
+      <div class="skill-item">Typography</div>
+      <div class="skill-item">Color Theory</div>
+    </div>
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+
+  <h2 class="section-title">Dự án Nổi bật</h2>
+
+  <div class="project">
+
+    <div class="project-img">
+      <img src="https://media.discordapp.net/attachments/1288526030054752314/1502708371265163394/Screenshot_2026-04-14_120438.png?ex=6a03fd7a&is=6a02abfa&hm=bc218e092f291539a65aa7170db934d551dc30ff28053109af5087c9ad19aa5c&=&format=webp&quality=lossless&width=1385&height=778">
+    </div>
+
+    <div class="project-info">
+      <h3>Thiết kế Nhân vật</h3>
+      <p>Thiết kế và phát triển nhân vật độc đáo với phong cách hiện đại và sáng tạo.</p>
+    </div>
+
+  </div>
+
+  <div class="project reverse">
+
+    <div class="project-img">
+      <img src="https://media.discordapp.net/attachments/1288526030054752314/1502708248929636412/Screenshot_2026-03-25_194302.png?ex=6a03fd5d&is=6a02abdd&hm=b0fd313b00c838f765bdcde7ea62f4b54ad645fa2dd761736c0417c79346447c&=&format=webp&quality=lossless&width=996&height=748">
+    </div>
+
+    <div class="project-info">
+      <h3>Thiết kế Photobook</h3>
+      <p>Thiết kế sách ảnh chuyên nghiệp với bố cục tối ưu và truyện thị giác hấp dẫn.</p>
+    </div>
+
+  </div>
+
+  <div class="project">
+
+    <div class="project-img">
+      <img src="https://picsum.photos/800/500?dark3">
+    </div>
+
+    <div class="project-info">
+      <h3>Ứng dụng Night Vision</h3>
+      <p>Hệ thống UX di động ở chế độ tối sâu sắc.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact-center">
+
+  <h2 class="section-title">Liên hệ</h2>
+
+  <div class="contact-info">
+    <p><strong>Email:</strong> <a href="mailto:anhkiet.design@gmail.com">anhkiet.design@gmail.com</a></p>
+    <p><strong>Số điện thoại:</strong> <a href="tel:+84912345678">+84 (912) 345-678</a></p>
+  </div>
+
+  <div class="socials">
+    <span>Behance</span>
+    <span>Dribbble</span>
+    <span>Instagram</span>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Lê Phùng Anh Kiệt — Scorpio Vision</p>
+</footer>
+
 </body>
 </html>
