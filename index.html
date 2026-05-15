@@ -25,6 +25,7 @@
 <!-- HEADER -->
 <header>
   <h1 class="logo">AKIET.</h1>
+  <button id="navToggle" class="nav-toggle" aria-label="Mở menu">☰</button>
   <nav>
     <a href="#home">Trang chủ</a>
     <a href="#about">Giới thiệu</a>
@@ -41,9 +42,7 @@
 
     <p class="fade-in">Xin chào, tôi là</p>
 
-    <h1 class="big">
-      LÊ PHÙNG <br> ANH KIỆT
-    </h1>
+    <h1 class="big">LÊ PHÙNG ANH KIỆT</h1>
 
     <h3 class="role">NHÀ THIẾT KẾ ĐỒ HỌA</h3>
 
@@ -274,6 +273,19 @@
         // use smaller avatar fallback for avatar class
         img.src = img.classList.contains('avatar') ? avatarFallback : fallbackDefault;
       });
+    });
+  })();
+
+  // MOBILE NAV TOGGLE
+  (function() {
+    const navToggle = document.getElementById('navToggle');
+    navToggle.addEventListener('click', () => {
+      document.body.classList.toggle('nav-open');
+    });
+
+    // close nav when clicking a link
+    document.querySelectorAll('nav a').forEach(a => {
+      a.addEventListener('click', () => document.body.classList.remove('nav-open'));
     });
   })();
 </script>
