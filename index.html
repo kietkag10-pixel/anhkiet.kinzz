@@ -150,19 +150,19 @@
 
   <div class="project-grid">
 
-    <div class="project-card" data-title="Thiết kế nhân vật" data-desc="Dự án nhân vật sáng tạo với phong cách điện ảnh." data-img="https://media.discordapp.net/attachments/1288526030054752314/1502708371265163394/Screenshot_2026-04-14_120438.png?ex=6a03fd7a&is=6a02abfa&hm=bc218e092f291539a65aa7170db934d551dc30ff28053109af5087c9ad19aa5c&=&format=webp&quality=lossless&width=1385&height=778">
-      <img src="https://media.discordapp.net/attachments/1288526030054752314/1502708371265163394/Screenshot_2026-04-14_120438.png?ex=6a03fd7a&is=6a02abfa&hm=bc218e092f291539a65aa7170db934d551dc30ff28053109af5087c9ad19aa5c&=&format=webp&quality=lossless&width=1385&height=778">
+    <div class="project-card" data-title="Thiết kế nhân vật" data-desc="Dự án nhân vật sáng tạo với phong cách điện ảnh." data-img="https://cdn.discordapp.com/attachments/1288526030054752314/1502708371265163394/Screenshot_2026-04-14_120438.png?ex=6a07f1fa&is=6a06a07a&hm=14ddc8292c243bb5d7410b3ed738451c04ebc7ad03d359b61befefbabdfd5a67">
+      <img src="https://cdn.discordapp.com/attachments/1288526030054752314/1502708371265163394/Screenshot_2026-04-14_120438.png?ex=6a07f1fa&is=6a06a07a&hm=14ddc8292c243bb5d7410b3ed738451c04ebc7ad03d359b61befefbabdfd5a67" alt="Thiết kế nhân vật">
       <div class="overlay">Thiết kế nhân vật</div>
     </div>
 
-    <div class="project-card" data-title="Thiết kế photobook" data-desc="Thiết kế photobook chuyên nghiệp, bố cục tinh tế và câu chuyện thị giác hấp dẫn." data-img="https://media.discordapp.net/attachments/1288526030054752314/1502708248929636412/Screenshot_2026-03-25_194302.png?ex=6a03fd5d&is=6a02abdd&hm=b0fd313b00c838f765bdcde7ea62f4b54ad645fa2dd761736c0417c79346447c&=&format=webp&quality=lossless&width=996&height=748">
-      <img src="https://media.discordapp.net/attachments/1288526030054752314/1502708248929636412/Screenshot_2026-03-25_194302.png?ex=6a03fd5d&is=6a02abdd&hm=b0fd313b00c838f765bdcde7ea62f4b54ad645fa2dd761736c0417c79346447c&=&format=webp&quality=lossless&width=996&height=748">
+    <div class="project-card" data-title="Thiết kế photobook" data-desc="Thiết kế photobook chuyên nghiệp, bố cục tinh tế và câu chuyện thị giác hấp dẫn." data-img="https://cdn.discordapp.com/attachments/1288526030054752314/1502708246270574592/Screenshot_2026-03-25_210102.png?ex=6a07f1dc&is=6a06a05c&hm=4a06e155142b5aec35b18c10880d41f35c5327cfd8c5205e26f42f671b9d2072&">
+      <img src="https://cdn.discordapp.com/attachments/1288526030054752314/1502708246270574592/Screenshot_2026-03-25_210102.png?ex=6a07f1dc&is=6a06a05c&hm=4a06e155142b5aec35b18c10880d41f35c5327cfd8c5205e26f42f671b9d2072&" alt="Thiết kế photobook">
       <div class="overlay">Thiết kế photobook</div>
     </div>
 
-    <div class="project-card" data-title="Ứng dụng Night Vision" data-desc="Giao diện ứng dụng tối ưu cho trải nghiệm đêm và phong cách hiện đại." data-img="https://picsum.photos/1200/800?dark3">
-      <img src="https://picsum.photos/800/500?dark3">
-      <div class="overlay">Ứng dụng Night Vision</div>
+    <div class="project-card" data-title="Thiết kế web" data-desc="Thiết kế web" data-img="https://cdn.discordapp.com/attachments/1288526030054752314/1502712303408382084/image.png?ex=6a07f5a4&is=6a06a424&hm=3eb2951349025084bee5176d93ccda0abb809bfb9b0176e3f79f5d093dde8c3b&">
+      <img src="https://cdn.discordapp.com/attachments/1288526030054752314/1502712303408382084/image.png?ex=6a07f5a4&is=6a06a424&hm=3eb2951349025084bee5176d93ccda0abb809bfb9b0176e3f79f5d093dde8c3b&" alt="Thiết kế web">
+      <div class="overlay">Thiết kế web</div>
     </div>
 
   </div>
@@ -257,6 +257,25 @@
   backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+  // IMAGE FALLBACK & LAZY-LOAD
+  (function() {
+    const fallbackDefault = 'https://via.placeholder.com/800x500?text=Ảnh+không+tìm+thấy';
+    const avatarFallback = 'https://via.placeholder.com/180?text=Avatar';
+
+    document.querySelectorAll('img').forEach(img => {
+      // enable native lazy loading where supported
+      if (!img.getAttribute('loading')) img.setAttribute('loading', 'lazy');
+
+      img.addEventListener('error', () => {
+        // prevent infinite loop if fallback also fails
+        if (img.dataset.fallbackSet) return;
+        img.dataset.fallbackSet = 'true';
+        // use smaller avatar fallback for avatar class
+        img.src = img.classList.contains('avatar') ? avatarFallback : fallbackDefault;
+      });
+    });
+  })();
 </script>
 
 </body>
